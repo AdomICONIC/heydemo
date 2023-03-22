@@ -4,8 +4,10 @@
 <title>Page Title</title>
 </head>
 <body>
-<script>window.location.replace("https://hellogpl.com/*");</script>
-<h1>This is a Heading</h1>
+var url = window.location;
+url = url.toString();
+url = url.replace(/www.hellogpl.com/,"domain.dev.domain.com")
+window.location = url;<h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
 </body>
