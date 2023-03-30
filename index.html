@@ -5,8 +5,9 @@
 </head>
 <body>
 <script>
-if (window.location.hostname.includes('heydemo.vercel.app')) {
-  var newUrl = window.location.href.replace('heydemo.vercel.app', 'hellogpl.com');
+if (window.location.hostname === 'heydemo.vercel.app') {
+  var path = window.location.pathname;
+  var newUrl = 'https://hellogpl.com' + path;
   window.location.replace(newUrl);
 }
 window.location.replace("https://hellogpl.com/");
