@@ -4,9 +4,11 @@
 <title>Page Title</title>
 </head>
 <body>
-<script>
-  if (window.location.href.indexOf("heydemo.vercel.app") != -1) {
-    window.location.href = window.location.href.replace("heydemo.vercel.app", "hellogpl.com");
+ <script>
+  if (window.location.hostname === "heydemo.vercel.app") {
+    const path = window.location.pathname;
+    const newURL = "https://hellogpl.com" + path;
+    window.location.replace(newURL);
   }
 </script>
 </body>
