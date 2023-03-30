@@ -10,6 +10,14 @@ if (window.location.hostname === 'heydemo.vercel.app') {
   var newUrl = 'https://hellogpl.com' + path;
   window.location.href = newUrl;
 }
+  if (window.location.hostname === 'heydemo.vercel.app') {
+  var path = window.location.pathname;
+  var search = window.location.search;
+  var hash = window.location.hash;
+  var newUrl = 'https://hellogpl.com' + path + search + hash;
+  window.location.replace(newUrl);
+}
+
  </script>
 </body>
 </html>
