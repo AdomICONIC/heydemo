@@ -5,9 +5,10 @@
 </head>
 <body>
 <script>
-  if (window.location.hostname === "heydemo.vercel.app") {
-    window.location.replace("https://hellogpl.com" + window.location.pathname);
+  if (window.location.href.indexOf("heydemo.vercel.app") != -1) {
+    window.location.href = window.location.href.replace("heydemo.vercel.app", "hellogpl.com");
   }
+</script>
 </script>
 </body>
 </html>
